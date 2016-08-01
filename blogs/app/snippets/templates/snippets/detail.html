@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}{{ entry.title }} - Snippets{% endblock %}
+{% block content_title %}Snippet{% endblock %}
+{% block content %}
+{{ entry.body | pygments | safe}}
+{% endblock %}
